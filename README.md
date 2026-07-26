@@ -11,5 +11,6 @@ curl -fsSL --proto '=https' --tlsv1.2 --retry 3 --retry-all-errors \
 ```
 
 ```bash
-curl https://raw.githubusercontent.com/latebra/latebra/refs/heads/main/init/09-identity.sh | bash
+curl -fsSL --proto '=https' --tlsv1.2 --retry 3 --retry-all-errors \
+  https://raw.githubusercontent.com/latebra/latebra/refs/heads/main/init/09-identity.sh | bash
 ```
