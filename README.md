@@ -38,9 +38,13 @@ rm -f /var/cache/apt/srcpkgcache.bin
 
 find /tmp -xdev -mindepth 1 -delete
 find /var/tmp -xdev -mindepth 1 -delete
+
 journalctl --rotate
 journalctl --vacuum-time=1s
+
 find /var/log -xdev -type f ! -path '/var/log/journal/*' -exec truncate -s 0 {} +
+
+sync
 ```
 
 ### Checks
