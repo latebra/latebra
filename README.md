@@ -18,7 +18,6 @@ apt-get autoremove --purge \
   kinfocenter \
   snapd \
   plasma-welcome \
-  firefox-esr \
   partitionmanager
 ```
 
