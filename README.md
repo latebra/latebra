@@ -15,8 +15,5 @@ kreadconfig6 --file PlasmaUserFeedback --group Global --key FeedbackLevel --defa
 ## Purge
 
 ```bash
-truncate -s 0 /etc/machine-id
-rm -f /var/lib/dbus/machine-id
-ln -sfn /etc/machine-id /var/lib/dbus/machine-id
-poweroff
+
 ```
