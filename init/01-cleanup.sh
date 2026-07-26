@@ -17,7 +17,6 @@ find /var/lib/systemd/coredump -xdev -mindepth 1 -delete 2>/dev/null
 find /tmp -xdev -mindepth 1 -delete
 find /var/tmp -xdev -mindepth 1 -delete
 
-find /home/taw/.cache /root/.cache -xdev -mindepth 1 -delete 2>/dev/null
 
 journalctl --rotate
 journalctl --vacuum-time=1s
@@ -29,5 +28,8 @@ rm -rf /var/cache/snapd
 rm -rf /var/snap
 rm -rf /home/taw/snap
 rm -rf /root/snap
+
+find /home -mindepth 1 -maxdepth 1 -type d -exec find {} -xdev -mindepth 1 -delete \;
+find /root -xdev -mindepth 1 -delete
 
 sync
