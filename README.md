@@ -1,3 +1,5 @@
+## Setup
+
 ```bash
 apt-get install kde-plasma-desktop
 ```
@@ -20,6 +22,8 @@ apt-get autoremove --purge \
   partitionmanager
 ```
 
+## Cleanup
+
 ```bash
 kwriteconfig6 --file PlasmaUserFeedback --group Global --key FeedbackLevel 0
 ```
@@ -36,11 +40,15 @@ journalctl --vacuum-time=1s
 find /var/log -xdev -type f ! -path '/var/log/journal/*' -exec truncate -s 0 {} +
 ```
 
+### Checks
+
 ```bash
 find /var/cache/apt/archives -type f -name '*.deb' -print
 
 kreadconfig6 --file PlasmaUserFeedback --group Global --key FeedbackLevel --default 0
 ```
+
+## Purge
 
 ```bash
 truncate -s 0 /etc/machine-id
