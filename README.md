@@ -22,7 +22,7 @@ apt-get autoremove --purge \
   partitionmanager
 ```
 
-## SEtup & Cleanup
+## Setup & Cleanup
 
 ```bash
 kwriteconfig6 --file PlasmaUserFeedback --group Global --key FeedbackLevel 0
