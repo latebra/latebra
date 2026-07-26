@@ -25,3 +25,9 @@ kwriteconfig6 --file PlasmaUserFeedback --group Global --key FeedbackLevel 0
 
 kreadconfig6 --file PlasmaUserFeedback --group Global --key FeedbackLevel --default 0
 ```
+
+# UI
+
+```bash
+Menu → Show Alternatives... → Application Menu
+```
