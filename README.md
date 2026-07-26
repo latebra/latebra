@@ -1,24 +1,7 @@
 ## Install
 
 ```bash
-apt-get install kde-plasma-desktop
-```
-
-```bash
-apt-get autoremove --purge \
-  kate \
-  kdeconnect \
-  konqueror \
-  plasma-discover \
-  kfind \
-  kwrite \
-  kde-spectacle \
-  zutty \
-  khelpcenter \
-  kinfocenter \
-  snapd \
-  plasma-welcome \
-  partitionmanager
+curl https://raw.githubusercontent.com/latebra/latebra/refs/heads/main/init/kde-plasma-desktop.sh | bash
 ```
 
 ## Setup & Cleanup
