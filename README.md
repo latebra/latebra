@@ -39,6 +39,10 @@ find /var/log -xdev -type f ! -path '/var/log/journal/*' -exec truncate -s 0 {} 
 ```
 
 ```bash
+find /var/cache/apt/archives -type f -name '*.deb' -print
+```
+
+```bash
 truncate -s 0 /etc/machine-id
 rm -f /var/lib/dbus/machine-id
 ln -sfn /etc/machine-id /var/lib/dbus/machine-id
