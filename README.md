@@ -1,4 +1,8 @@
 ```bash
+apt-get install kde-plasma-desktop
+```
+
+```bash
 apt-get autoremove --purge \
   kate \
   kdeconnect \
