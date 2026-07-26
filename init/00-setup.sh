@@ -1,4 +1,5 @@
-apt-get install kde-plasma-desktop -y
+apt-get install -y \
+  kde-plasma-desktop
 
 apt-get autoremove --purge -y \
   kate \
@@ -15,4 +16,6 @@ apt-get autoremove --purge -y \
   plasma-welcome \
   partitionmanager
 
-apt-get install curl wget -y
+apt-get install -y \
+  curl \
+  wget
