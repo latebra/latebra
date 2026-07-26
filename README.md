@@ -1,4 +1,4 @@
-## Setup
+## Install
 
 ```bash
 apt-get install kde-plasma-desktop
@@ -22,7 +22,7 @@ apt-get autoremove --purge \
   partitionmanager
 ```
 
-## Cleanup
+## SEtup & Cleanup
 
 ```bash
 kwriteconfig6 --file PlasmaUserFeedback --group Global --key FeedbackLevel 0
