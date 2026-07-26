@@ -1,4 +1,4 @@
-keyboard "TheAnotherWise"
+keyboard "Latebra"
 
 key Escape                              : "\E"
 key Space+Control                       : "\x00"
