@@ -1,5 +1,5 @@
 ```bash
-apt-get install kde-plasma-desktop
+apt-get install kde-plasma-desktop -y
 ```
 
 ```bash
