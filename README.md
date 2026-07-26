@@ -22,8 +22,6 @@ apt-get autoremove --purge \
 
 ```bash
 kwriteconfig6 --file PlasmaUserFeedback --group Global --key FeedbackLevel 0
-
-kreadconfig6 --file PlasmaUserFeedback --group Global --key FeedbackLevel --default 0
 ```
 
 ```bash
@@ -40,6 +38,8 @@ find /var/log -xdev -type f ! -path '/var/log/journal/*' -exec truncate -s 0 {} 
 
 ```bash
 find /var/cache/apt/archives -type f -name '*.deb' -print
+
+kreadconfig6 --file PlasmaUserFeedback --group Global --key FeedbackLevel --default 0
 ```
 
 ```bash
