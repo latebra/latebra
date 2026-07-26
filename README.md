@@ -36,7 +36,9 @@ find /var/tmp -xdev -mindepth 1 -delete
 journalctl --rotate
 journalctl --vacuum-time=1s
 find /var/log -xdev -type f ! -path '/var/log/journal/*' -exec truncate -s 0 {} +
+```
 
+```bash
 truncate -s 0 /etc/machine-id
 rm -f /var/lib/dbus/machine-id
 ln -sfn /etc/machine-id /var/lib/dbus/machine-id
