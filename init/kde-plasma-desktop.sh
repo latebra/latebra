@@ -1,6 +1,6 @@
-apt-get install kde-plasma-desktop
+apt-get install kde-plasma-desktop -y
 
-apt-get autoremove --purge \
+apt-get autoremove --purge -y \
   kate \
   kdeconnect \
   konqueror \
@@ -14,3 +14,5 @@ apt-get autoremove --purge \
   snapd \
   plasma-welcome \
   partitionmanager
+
+apt-get install curl wget -y
